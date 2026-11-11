@@ -1,0 +1,11 @@
+// Cloudflare Worker "driver" (driver.bayloas.com): the CDL driver application.
+// Everything in ./public is served as-is; there is no build step. The form
+// posts to Bayloas One (/api/public/driver-apply).
+{
+  "name": "driver",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  }
+}
