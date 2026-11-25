@@ -52,6 +52,11 @@
   .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 72px; }
   .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: clamp(20px, 6.4vw, 30px); letter-spacing: .06em; line-height: 1; white-space: nowrap; }
   .logo img { width: clamp(26px, 7.6vw, 36px); height: clamp(26px, 7.6vw, 36px); flex: none; }
+  /* Lockup: wordmark with the slogan underneath */
+  .lockup { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .lockup b { font-weight: 800; line-height: 1; }
+  .lockup small { font-size: clamp(9px, 2.5vw, 11.5px); font-weight: 600; letter-spacing: .01em; color: var(--muted); line-height: 1; white-space: nowrap; }
+  .lockup small em { font-style: normal; color: var(--brand); }
   .nav-phone { display: inline-flex; align-items: center; gap: 7px; font-weight: 700; font-size: 14.5px; white-space: nowrap; }
   .nav-phone svg { width: 17px; height: 17px; color: var(--brand); }
   @media (max-width: 420px) { .nav-phone span { display: none; } .nav-phone { padding: 10px; border: 1px solid var(--line); border-radius: 999px; } }
@@ -189,7 +194,7 @@
 
 <header class="nav">
   <div class="wrap">
-    <a href="/" class="logo" aria-label="Bayloas"><img src="/logo.png" alt="" width="36" height="36" /><span>BAYLOAS</span></a>
+    <a href="/" class="logo" aria-label="Bayloas"><img src="/logo.png" alt="" width="36" height="36" /><span class="lockup"><b>BAYLOAS</b><small>Built on Trust. <em>Built to Solve.</em></small></span></a>
     <a href="tel:+18322717718" class="nav-phone" aria-label="Call (832) 271-7718"><svg><use href="#i-phone"/></svg><span>(832) 271-7718</span></a>
   </div>
 </header>
@@ -320,7 +325,7 @@
 <footer>
   <div class="wrap">
     <div class="foot">
-      <a href="/" class="logo" style="font-size:22px"><img src="/logo.png" alt="" width="28" height="28" style="width:28px;height:28px" /><span>BAYLOAS</span></a>
+      <a href="/" class="logo" style="font-size:22px"><img src="/logo.png" alt="" width="28" height="28" style="width:28px;height:28px" /><span class="lockup"><b>BAYLOAS</b><small>Built on Trust. <em>Built to Solve.</em></small></span></a>
       <nav aria-label="Contact">
         <a href="tel:+18322717718">(832) 271-7718</a>
         <a href="mailto:recruitment@bayloas.com">recruitment@bayloas.com</a>
